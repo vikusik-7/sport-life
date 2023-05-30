@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="../static/css/calculator.css">
+<div class="center_content">
+    <div class="maintext">
+        <div class="calculator-container">
+            <form class="form-container">
+                <h2 class="heading--1">Калькулятор калорій</h2>
+
+                <div>
+                    <label for="ingredient-name">Назва інгрідієнту</label>
+                    <input id="ingredient-name" type="text" placeholder="Цукор" />
+                </div>
+                <div>
+                    <label for="amount">Вага</label>
+                    <input id="amount" type="number" placeholder="120" />
+                </div>
+                <div>
+                    <label for="calories">Калорій на 100 грам</label>
+                    <input id="calories" type="number" placeholder="460" />
+                </div>
+
+                <p class="message"></p>
+
+                <div class="calculatorButtons">
+                    <button class="buttonCalc btn--add" type="submit" value="Add ingredients">
+                        Додати інгрідієнт
+                    </button>
+                    <button class="buttonCalc btn--calculate" type="submit" value="Calculate calories">
+                        Порахувати калорії
+                    </button>
+                </div>
+            </form>
+            <div class="list-container">
+                <h2 class="heading--2">Список інгрідієнтів</h2>
+
+                <p class="welcome-message">
+                    🙂 Додайте інгрідієнти, щоб порахувати калорії страви
+                </p>
+
+                <div id="recipe__ingredients" class="recipe__ingredients hidden">
+                    <ol class="ingredient-list" id="list"></ol>
+                </div>
+                <div id="total-calories" class="total-calories">
+                    <div id="result-message" class="result-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../static/js/calculator.js"></script>

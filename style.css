@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@300&display=swap');
+
+/*-----center_content-----*/
+
+main {
+    background: #a9d1edc3;
+    padding-bottom: 20px;
+}
+
+.center_content {
+    font-family: 'Literata', serif;
+    font-size: 21px;
+    color: #090909;
+    display: flex;
+}
+
+/*----maintext----*/
+
+.maintext {
+    width: 100%;
+    text-align: left;
+    margin: 30px 20px 0 20px;
+}
+
+.maintext h1,
+h2,
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.maintext ol {
+    padding-left: 0;
+}
+
+.maintext ol li {
+    list-style-position: inside;
+    list-style-type: none;
+    counter-increment: item;
+}
+
+.maintext ol li:before {
+    display: inline-block;
+    content: counter(item) ".";
+}
+
+.maintext ol.marked li:before {
+    font-weight: bold;
+
+}
+
+.exercise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 15px;
+}
+
+.exercise_rev {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 30px 0
+}
+
+/*----img----*/
+
+.img {
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin: 20px 40px 20px 30px;
+}
+
+.gif {
+    width: 600px;
+    height: 338px;
+    border-radius: 9px;
+}
+
+.exercise .gif {
+    margin-left: 50px;
+}
+
+.exercise_rev .gif {
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+/*----scroll----*/
+
+.scrollButton {
+    width: 40px;
+    background-color: #8fa7b3;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 6px 6px 3px 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+}
+
+.scrollButton:hover {
+    background-color: #6e96ac;
+    opacity: 0.9;
+}
+
+.scrollButton:active {
+    background-color: #4487ac;
+    opacity: 0.9;
+}
+
+.scrollButton img {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+}

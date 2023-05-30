@@ -1,0 +1,56 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+}
+
+.buttons * {
+    flex: 1 1 160px;
+}
+
+.btn {
+    background: linear-gradient(0deg, #1e39b4 0%, #254dff 100%);
+    width: 100px;
+    height: 30px;
+    margin: 15px 20px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.btn_training {
+    height: 50px;
+}
+
+.btn span {
+    font-size: 24px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#ffffff, #afafaf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #1a3096 0%, #2f52f0 100%);
+}
+
+.btn:hover span {
+    background: -webkit-linear-gradient(#ebebeb, #b3b3b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn:active {
+    background: linear-gradient(0deg, #0d1c63 0%, #183de2 100%);
+}
+
+.btn:active span {
+    background: -webkit-linear-gradient(#ebebeb, #505050);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
